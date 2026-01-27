@@ -9,8 +9,8 @@
 
 ### 2. Azure OpenAI Configuration (application.properties)
 ```properties
-azure.openai.endpoint=https://metlife-openaitejas.openai.azure.com/
-azure.openai.key=8wDWV6eJDGNZi1fUSCHilLLjerVrg9vY6ep607frJosAOlVfhE5nJQQJ99CAACqBBLyXJ3w3AAABACOGLnlI
+azure.openai.endpoint=
+azure.openai.key=
 azure.openai.deployment=gpt-4o-mini
 ```
 ✅ **Status**: Configured
@@ -18,29 +18,29 @@ azure.openai.deployment=gpt-4o-mini
 ### 3. Google Custom Search Configuration (application.properties)
 ```properties
 google.search.api.key=YOUR_API_KEY_HERE
-google.search.engine.id=4436b4b468f9941c8
+google.search.engine.id=
 ```
 ⚠️ **Status**: Engine ID configured, API key pending
 
 ### 4. Azure Document AI (OCR) Configuration
 ```properties
-azure.vision.endpoint=https://metlifevision.cognitiveservices.azure.com/
-azure.vision.key=D31DREU7mY1SKOu885DLoJPm9i5pwH40H6gPZxxfD8wC60TP1P3OJQQJ99CAACGhslBXJ3w3AAAFACOGLgUf
+azure.vision.endpoint=
+azure.vision.key=
 ```
 ✅ **Status**: Configured
 
 ### 5. Azure Blob Storage Configuration
 ```properties
-azure.storage.connection-string=DefaultEndpointsProtocol=https;AccountName=tejasclaimstorage;...
-azure.storage.container-name=claims-documents
+azure.storage.connection-string
+azure.storage.container-name=
 ```
 ✅ **Status**: Configured
 
 ### 6. Azure SQL Database Configuration
 ```properties
-spring.datasource.url=jdbc:sqlserver://metlife.database.windows.net:1433;database=MetLifeTejas;...
-spring.datasource.username=TejasAvhad
-spring.datasource.password=Tejas@Met2026
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
 ```
 ✅ **Status**: Configured
 
@@ -84,13 +84,13 @@ spring.datasource.password=Tejas@Met2026
 ========== INITIALIZING LANGCHAIN4J AI AGENT ==========
 
 [ClaimAiAgentService] Configuring Azure OpenAI Chat Model
-[ClaimAiAgentService] → Endpoint: https://metlife-openaitejas.openai.azure.com/
+[ClaimAiAgentService] → Endpoint: 
 [ClaimAiAgentService] → Deployment: gpt-4o-mini
 [ClaimAiAgentService] → API Key: ✓ Configured
 [ClaimAiAgentService] ✓ Azure OpenAI Chat Model configured successfully
 [ClaimAiAgentService] Building AI Services with tools...
 [ClaimAiAgentService] → Google Search API Key: ✓ Configured
-[ClaimAiAgentService] → Search Engine ID: 4436b4b468f9941c8
+[ClaimAiAgentService] → Search Engine ID: 
 [ClaimAiAgentService] ✓ Initialized with PolicyTool AND WebSearchTool
 [ClaimAiAgentService] ✓ ClaimAgent successfully initialized and ready!
 
@@ -102,7 +102,7 @@ spring.datasource.password=Tejas@Met2026
 [PolicyRuleService] ========== STARTING OCR EXTRACTION ==========
 
 [PolicyRuleService] Uploading claimForm to Azure Blob Storage...
-[PolicyRuleService] ClaimForm uploaded: https://...
+[PolicyRuleService] ClaimForm uploaded: 
 [PolicyRuleService] Extracting text from claimForm using Azure Document AI...
 [PolicyRuleService] ✓ ClaimForm OCR SUCCESS - Extracted 1234 chars
 [OCR - ClaimForm] >>> [First 200 chars of extracted text]...
