@@ -881,7 +881,7 @@ if (policy.isEmpty()) {
 2. Uploads it to **Azure Blob Storage** (like Google Drive but for apps)
 3. Returns the URL where the file is stored
 
-**Example URL**: `https://tejasclaimstorage.blob.core.windows.net/claims-documents/abc123-death-certificate.pdf`
+**Example URL**: `https://blobname.blob.core.windows.net/claims-documents/abc123-death-certificate.pdf`
 
 ---
 
